@@ -4,6 +4,8 @@
 Create & tag image:
 ```
 docker build -t nuada/ssl-proxy .
+docker tag nuada/ssl-proxy:latest localhost:5000/ssl-proxy:$(date +%F)
+docker push localhost:5000/ssl-proxy
 ```
 
 Create container:
